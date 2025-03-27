@@ -1,6 +1,6 @@
 # lcaf-component-java-library
 
-This repository holds the component for Java library modules within the Launch Common Automation Framework (LCAF). It is intended to be widely compatible with the broad array of Java build tools and frameworks by separating framework-specific tasks into their own Makefiles. Targets that are generalized across multiple frameworks should be placed in the Makefile under `tasks/common`.
+This repository holds the  component for Java library modules within the Launch Common Automation Framework (LCAF). It is intended to be widely compatible with the broad array of Java build tools and frameworks by separating framework-specific tasks into their own Makefiles. Targets that are generalized across multiple frameworks should be placed in the Makefile under `tasks/common`.
 
 This component contains the following:
 
