@@ -1,3 +1,10 @@
+# Set JAVA_HOME using asdf
+JAVA_HOME := $(shell asdf where java)
+export JAVA_HOME
+export PATH := $(JAVA_HOME)/bin:$(PATH)
+
+$(info JAVA_HOME set to: $(JAVA_HOME))
+
 .PHONY: install
 install::
 	@echo "Running install target"
