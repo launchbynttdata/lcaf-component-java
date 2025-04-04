@@ -21,7 +21,7 @@ build:: install
 	@./mvnw package
 
 .PHONY: publish
-publish::
+publish:: build
 	@echo "Running publish target"
 	@./mvnw deploy
 
