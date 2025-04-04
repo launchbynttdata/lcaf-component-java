@@ -19,6 +19,8 @@ test:: install
 build:: install
 	@echo "Running build target"
 	@./mvnw package
+	@echo "Running deploy target (from build)"
+	@./mvnw deploy
 
 .PHONY: publish
 publish:: build
