@@ -26,7 +26,7 @@ build:: install
 		--application-id-parameter-name $$APP_ID \
 		--installation-id-parameter-name $$INSTALLATION_ID \
 		--signing-cert-secret-name github/app/aws-pipeline-authentication/private_key); \
-	echo "<settings><servers><server><id>github</id><username>github</username><password=$$TOKEN</password></server></servers></settings>" > temp-settings.xml; \
+	echo "<settings><servers><server><id>github</id><username>github</username><password>$$TOKEN</password></server></servers></settings>" > temp-settings.xml; \
 	./mvnw deploy --settings temp-settings.xml; \
 	rm -f temp-settings.xml
 	
